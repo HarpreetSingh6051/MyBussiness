@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "831864878150",
+    "firebase_url": "https://my-bussiness-93e71.firebaseio.com",
+    "project_id": "my-bussiness-93e71",
+    "storage_bucket": "my-bussiness-93e71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831864878150:android:eda2287d0b423140",
+        "android_client_info": {
+          "package_name": "com.harpreet.mybussiness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831864878150-29bop52ssj2p2pb1aijpo484krhcaiiv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhcepG2cncdcKEjhUJNtazo_kQh_cx_Wo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
