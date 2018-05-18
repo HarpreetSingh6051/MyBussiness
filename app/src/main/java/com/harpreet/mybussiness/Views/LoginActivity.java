@@ -25,6 +25,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     EditText edtPasseord;
 
     Button btnSubmit;
+   Button btnSignup;
 
     FirebaseAuth auth;
     User user;
@@ -37,6 +38,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         btnSubmit = findViewById(R.id.btnSubmit);
         btnSubmit.setOnClickListener(this);
+
+        btnSignup = findViewById(R.id.btnsignUp);
+        btnSignup.setOnClickListener(this);
 
         auth = FirebaseAuth.getInstance();
         user = new User();
@@ -79,9 +83,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        user.email = edtEmail.getText().toString().trim();
-        user.password = edtPasseord.getText().toString().trim();
+            if(v == btnSignup){
+                Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+                startActivity(intent);
 
-        loginUser();
+            }else {
+                user.email = edtEmail.getText().toString().trim();
+                user.password = edtPasseord.getText().toString().trim();
+                loginUser();
+            }
+
     }
 }

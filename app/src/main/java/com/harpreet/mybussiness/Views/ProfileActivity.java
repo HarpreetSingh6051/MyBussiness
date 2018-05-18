@@ -59,7 +59,7 @@ public class ProfileActivity extends AppCompatActivity implements BottomNavigati
             FirebaseAuth auth = FirebaseAuth.getInstance();
             auth.signOut();
 
-            Intent intent = new Intent(ProfileActivity.this,EntersActivity.class);
+            Intent intent = new Intent(ProfileActivity.this,LoginActivity.class);
             startActivity(intent);
             finish();
 

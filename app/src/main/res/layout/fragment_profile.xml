@@ -10,16 +10,23 @@
         android:padding="16dp">
 
         <ImageView
+            android:id="@+id/Profile"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:background="@drawable/user"/>
+        <Button
+            android:id="@+id/profileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Photo"
+            android:textSize="20dp"/>
     <TextView
         android:id="@+id/txtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Harpreet singh"
+        android:text=" "
         android:gravity="center"
         android:textSize="20dp"
         android:layout_marginTop="10dp"
@@ -29,7 +36,7 @@
         android:id="@+id/txtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="harpreetsingh6051@gmail.com"
+        android:text=" "
         android:gravity="center"
         android:textSize="20dp"
         android:layout_marginTop="10dp"
@@ -71,7 +78,7 @@
         android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:text="Enter Your Address"/>
+        android:hint=" Enter Your Address: "/>
 
     <Button
         android:id="@+id/btnLogOut"

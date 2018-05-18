@@ -34,7 +34,7 @@ public class SplashActivity extends AppCompatActivity {
             Intent intent = null ;
 
             if(msg.what==101){
-                intent = new Intent(SplashActivity.this,EntersActivity.class);
+                intent = new Intent(SplashActivity.this,LoginActivity.class);
             }else {
                 intent = new Intent(SplashActivity.this,ProfileActivity.class);
             }
